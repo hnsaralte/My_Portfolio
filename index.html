@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <div class="navmenu">
+                <a class="hideOnMobile" href="#home">Home</a>
+                <a class="hideOnMobile" href="#about">About Me</a>
+                <a class="hideOnMobile" href="#projects">Projects</a>
+                <a class="hideOnMobile" href="#contact">Contact</a>
+                <a onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="28" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </div>
+            <div class="sidebar">
+                <a onclick=hideSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="home-content">
+          <div class="intro">
+                <h3>Hi, myself</h3>
+                <h1>Lalhmangaihsanga</h1>
+                <h3>And i'm a Full Statck Web Developer</h3>
+          </div>
+          <div class="cv">
+            <button class="cv-button"><a href="https://drive.google.com/file/d/1bCsrrqrmbb14bSjMieW2lA40-HDXl_W1/view?usp=sharing">Download CV</a></button>
+          </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h3>About Me</h3>
+            <p>Hello! My name is Lalhmangaihsanga. I am currently pursuing my B.Tech in Computer Engineering at Delhi Technological University (DTU), where I started in 2021 and will graduate in 2025. So far, I have maintained a CGPA of 6.28 up to the 5th semester.</p>
+            <h3>Education</h3>
+            <p>B.Tech(COE): Delhi Technological University - 6.28cgpa (2021-2025)<br>12th Grade: Amity International School - 82% (2019-2021)<br>10th Grade: Kendriya Vidyalaya School - 81% (2009-2019)</p>
+            <h3>Skills</h3>
+            <p>I have a strong foundation in both front-end and back-end development:<br>Front-end: HTML, CSS, JavaScript<br>Back-end: Node.js, Express<br>I am continuously learning and expanding my skill set to keep up with the latest technologies and best practices in software development.</p>
+            <h3>Interests</h3>
+            <p>Apart from coding, I have a keen interest in sports, especially football. Playing and following football helps me stay active and sharp, contributing to my overall well-being and focus.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="project-section">
+        <div class="project-content">
+            <div class="card1">
+                <h1>Portfolio Website</h1>
+                <p>I have created a personal portfolio website to showcase my skills, education, and projects. The portfolio serves as an online resume and a platform for potential employers and collaborators to learn more about me and my work. It includes sections like About Me, Skills, Education, Projects, and Contact.</p>
+                <p>Technologies Used: HTML, CSS, JavaScript </p>
+                <p><a href="#home">Click here to view</a></p>
+            </div>
+            <div class="card2">
+                <h1>Drum Kit</h1>
+                <p>The Drum Kit project is a simple, interactive web application that allows users to play drum sounds. Different images of drum kit components, such as bass and snare drums, are displayed. Users can either click on these images or press the corresponding keys on their keyboard to produce drum sounds.</p>
+                <p>Technologies Used: HTML, CSS, JavaScript</p>
+                <p><a href="https://hnsaralte.github.io/Drum-Kit/">Click here to view</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <div class="contact-card">
+                <h1>Contact me</h1>
+                <div class="mail"><a href="https://github.com/lsanga-ralte">Github </a></div>
+                <div class="wa"><a href="https://wa.me/9310116531">Whatsapp</a></div>
+                <div class="ld"><a href="https://www.linkedin.com/in/lalhmangaihsanga-ralte-3a488022a/">Linkedin</a></div>
+                <div class="ig"><a href="https://www.instagram.com/hnsaralte/">Instagram</a></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            ©2024 Lalhmangaihsanga. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #000;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin-left: 40px;
+    font-size: 23px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+}
+
+.navbar a:hover {
+    color: yellow;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar a {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    color: #000;
+}
+
+.home-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.home-content {
+    text-align: center;
+}
+
+.home-content h1, h3 {
+    margin: 10px 0;
+}
+
+.home-content h3 {
+    font-size: 25px;
+}
+
+.home-content h1 {
+    font-size: 70px;
+    color: yellow;
+}
+
+.cv {
+    margin: 50px 0;
+}
+
+.cv-button {
+    padding: 7px 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: yellow;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cv-button:hover {
+    background-color: yellow;
+    transform: scale(1.1);
+}
+
+.cv-button a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.about-section {
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    height: 80%;
+    width: 60%;
+}
+
+.about-content h3 {
+    color: yellow;
+}
+
+.project-section {
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.project-content {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.card1, .card2 {
+    height: 90%;
+    width: 40%;
+    background: url(backgorund.jpg);
+    border-radius: 10px;
+}
+
+.card1 h1, .card2 h1 {
+    text-align: center;
+    padding: 20px 0 5px 0;
+    font-size: 30px;
+}
+
+.card1 p, .card2 p {
+    padding: 10px 15px 10px 15px;
+    word-break: break-all;
+}
+
+.card1 p a, .card2 p a {
+    color: blue;
+    text-decoration:none;
+}
+
+.card1 p a:hover, .card2 p a:hover {
+    color: darkblue;
+}
+
+.contact-section {
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.contact-content {
+    height: 70%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-card h1 {
+    font-size: 50px;
+}
+
+.mail, .wa, .ld, .ig {
+    margin: 50px 0;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mail:hover, .wa:hover, .ld:hover, .ig:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.mail {
+    background: linear-gradient(135deg, #333333, #6e5494);
+}
+.wa {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+}
+.ld {
+    background: linear-gradient(45deg, #0077B5, #00A0DC);
+}
+.ig{
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.mail a, .wa a, .ld a, .ig a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    height: 100px;
+    background-color: yellow;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: #000;
+    font-size: 13px;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .about-content {
+        width: 80%;
+    }
+
+    .about-content h3 {
+        font-size: 40px;
+    }
+
+    .about-content p {
+        font-size: 20px;
+    }
+
+    .project-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card1, .card2 {
+        width: 80%;
+    }
+
+    .contact-content {
+        width: 80%;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+
+    .contact-card h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .home-section {
+        height: 60vh;
+    }
+    .intro h1 {
+        font-size: 45px;
+    }
+    .contact-section {
+        height: 60vh;
+    }
+}
+
+@media(max-width: 500px) {
+    .intro h1 {
+        font-size: 40px;
+    }
+    .intro h3 {
+        font-size: 30px;
+    }
+
+    .about-section {
+        padding: 20px;
+    }
+    .about-content {
+        width: 90%;
+    }
+
+    .project-section {
+        padding: 20px;
+    }
+    .card1, .card2 {
+        width: 100%;
+    }
+}
+
+@media(max-width: 430px) {
+
+    .home-section {
+        height: 60vh;
+    }
+
+    .intro h1 {
+        font-size: 35px;
+    }
+
+    .intro h3 {
+        font-size: 17px;
+    }
+
+    .cv-button {
+        padding: 5px 8px;
+        font-size: 13px;
+    }
+    .about-content h3 {
+        font-size: 20px;
+    }
+    .about-content p {
+        font-size: 10px;
+    }
+    .about-section {
+        min-height: 60vh;
+    }
+    .project-section {
+        padding-top: 50px;
+        min-height: 60vh;
+    }
+    .card1 h1, .card2 h1 {
+        font-size: 20px;
+    }
+    .card1 p, .card2 p {
+        font-size: 10px;
+    }
+    .contact-card h1 {
+        font-size: 20px;
+    }
+    .mail, .wa, .ld, .ig {
+        margin: 20px 0;
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width: 375px) {
+    .home-section {
+        height: 80vh;
+    }
+    .intro h3 {
+        font-size: 17px;
+    }
+    .about-content h3 {
+        font-size: 25px;
+    }
+    .about-content p {
+        font-size: 10px;
+    }
+    .card1 h1, .card2 h1 {
+        font-size: 20px;
+    }
+    .card1 p, .card2 p {
+        font-size: 10px;
+    }
+    .contact-card h1 {
+        font-size: 20px;
+    }
+    .mail, .wa, .ld, .ig {
+        margin: 20px 0;
+        font-size: 15px;
+    }
+}
